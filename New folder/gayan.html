@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gayan Aththanayaka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./G.jpg"/>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <heaader class="header">
+      <a href="#home" class="logo">Mr. <span>Gayan</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#websites">Websites</a>
+        <a href="#testimonials">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </heaader>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, I'm <span>Gayan Aththanayaka</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          Welcome to my portfolio! I am Gayan Manupriya Aththanayaka, a 24-year-old final-year student at the University of Moratuwa, pursuing a Bachelor of Information Technology. Originally from Welimada, I currently live in Malabe to continue my studies. With a strong passion for technology, my primary interest lies in Java development. As a Java intern, I enjoy building robust, efficient, and scalable applications while honing my programming and problem-solving skills. Eager to grow both academically and professionally,
+               I am focused on leveraging my expertise in Java and related technologies to contribute meaningfully to the software development industry.
+        </p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/gayan-aththanayaka-77551a262/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/gayanmanu" target="_blank"><i class="bx bxl-github"></i></a>
+          <!-- <a href="https://www.instagram.com/aththanayaka.z/"_blank"><i class="bx bxl-instagram-alt"></i></a> -->
+          <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="mailto:gayanmanupriya0@gmail.com" target="_blank" class="btn">Hire Me</a>
+          <a href="https://drive.google.com/file/d/1iPGM8HMQroyccj7XvLFKF4wRivwKugGg/view?usp=sharing" class="btn">Download CV</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="./gayan.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2014 - 2016</div>
+          <div class="timeline-content">
+            <h3>Primary Education</h3>
+            <p>
+              Welimada Central Collage<br/>
+G.C.E (Ordinary Level) Examination <br/>
+<b>pass</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017 - 2019</div>
+          <div class="timeline-content">
+            <h3>Secondary Education</h3>
+            <p>
+                Welimada Central Collage<br/>
+G.C.E (Advance Level) Examination Enginering Technology Stream<br/>
+<b>“C” pass & Two “S” passes</b>
+            </p>
+          </div>
+        </div>
+
+       
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022 - Present</div>
+          <div class="timeline-content">
+            <h3>University</h3>
+            <p>
+             University of Moratuwa<br/>
+Bachelor of Information Technology
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Web Development</h4>
+            <p>
+              I provide tailored web development services, creating responsive, user-friendly websites and applications. Specializing in front-end and back-end development, I deliver secure, scalable solutions, including e-commerce and custom functionality. I collaborate closely with clients to ensure impactful digital experiences that meet their goals and drive succes
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>UI / UX Design</h4>
+            <p>
+              I offer UI/UX design services that focus on creating intuitive and visually appealing digital experiences. By understanding client goals and target audiences, I deliver user-friendly interfaces and optimized user flows to enhance engagement and drive business success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="websites" id="websites">
+      <div class="websites-box">
+        <h2 class="heading"><span>MY</span> PROJECTS</h2>
+        <div class="websites-wrapper" id="websitesList"></div>
+      </div>
+    </section>
+    
+    <script>
+      // Array of website details
+      const websites = [
+        { name: "ShutterScape", img: "./sHUTER.png", url: "https://github.com/gayanmanu/ShutterScape" },
+        { name: "Weather App", img: "./Weather.png", url: "https://github.com/gayanmanu/Weather-App/tree/main" },
+        { name: "Java-Projects", img: "./Java-Projects.png", url: "#"},
+      ];
+    
+      // Generate and insert website items dynamically
+      document.getElementById("websitesList").innerHTML = websites
+        .map(website => `
+          <div class="website-item">
+            <a href="${website.url}" target="_blank">
+              <img src="${website.img}" alt="${website.name}" />
+              <h2>${website.name}</h2>
+            </a>
+          </div>
+        `)
+        .join("");
+    </script>    
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-box">
+        <h2 class="heading">Skills</h2>
+    
+        <div class="websites-wrapper" id="skillsList"></div>
+      </div>
+    </section>
+    
+    <script>
+      // Array of skills with image paths
+      const skills = [
+        { name: "HTML", img: "./html.png" },
+        { name: "CSS", img: "./css.png" },
+        { name: "JavaScript", img: "./js.png" },
+        { name: "Figma", img: "./figma-icon.png" },];
+        const Web = [
+        { name: "Node JS", img: "./node.png" },
+        { name: "Tailwind CSS", img: "./tailwind.png" },
+        { name: "Express JS", img: "./express.png" },
+        { name: "Tkinter", img: "./tkinter.png" },
+        { name: "Custom Tkinter", img: "./customtkinter.png" },
+        { name: "WebSocket", img: "./webscoket.png" },
+        { name: "EmailJs", img: "./emailjs.png" }
+      ];
+    
+      // Generate and insert skill items using map()
+      document.getElementById("skillsList").innerHTML = skills
+        .map(skill => `
+          <div class="website-item">
+            <img src="${skill.img}" alt="${skill.name}" />
+            <h2>${skill.name}</h2>
+          </div>
+        `)
+        .join("");
+    </script>
+  
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://api.whatsapp.com/send/?phone=94767119667&text&type=phone_number&app_absent=0" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100075380740250" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/aththanayaka.z/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+          <a href="https://www.linkedin.com/in/gayan-aththanayaka-77551a262/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About Me</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Skills</a>
+        </li>
+      </ul>
+      <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Gayan Aththanayaka| All Right Reserved</p>
+    <script src="script.js"></script>
+  </body>
+</html>
